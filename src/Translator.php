@@ -1,4 +1,4 @@
-<?php namespace Vsch\TranslationManager;
+<?php namespace Morningtrain\TranslationManager;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Foundation\Application;
@@ -496,7 +496,7 @@ class Translator extends LaravelTranslator
     function setTranslationManager(Manager $manager)
     {
         $this->manager = $manager;
-        $this->package = \Vsch\TranslationManager\ManagerServiceProvider::PACKAGE;
+        $this->package = \Morningtrain\TranslationManager\ManagerServiceProvider::PACKAGE;
         $this->packagePrefix = $this->package . '::';
         $this->cookiePrefix = $this->manager->config('persistent_prefix', $this->packagePrefix);
         $this->useCookies = $this->manager->config('use_cookies', $this->packagePrefix);

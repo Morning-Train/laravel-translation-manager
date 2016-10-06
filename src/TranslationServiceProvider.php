@@ -1,4 +1,4 @@
-<?php namespace Vsch\TranslationManager;
+<?php namespace Morningtrain\TranslationManager;
 
 use Illuminate\Translation\TranslationServiceProvider as BaseTranslationServiceProvider;
 
@@ -24,13 +24,13 @@ class TranslationServiceProvider extends BaseTranslationServiceProvider
             // configuration so we can easily get both of these values from there.
             $locale = $app['config']['app.locale'];
 
-            $trans = new \Vsch\TranslationManager\Translator($app, $loader, $locale);
+            $trans = new \Morningtrain\TranslationManager\Translator($app, $loader, $locale);
 
             $trans->setFallback($app['config']['app.fallback_locale']);
 
-            if ($app->bound(\Vsch\TranslationManager\ManagerServiceProvider::PACKAGE))
+            if ($app->bound(\Morningtrain\TranslationManager\ManagerServiceProvider::PACKAGE))
             {
-                $trans->setTranslationManager($app[\Vsch\TranslationManager\ManagerServiceProvider::PACKAGE]);
+                $trans->setTranslationManager($app[\Morningtrain\TranslationManager\ManagerServiceProvider::PACKAGE]);
             }
 
             return $trans;

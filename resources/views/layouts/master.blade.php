@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="<?= $currentLocale ?>">
-<?php use Vsch\TranslationManager\ManagerServiceProvider; $public_prefix = ManagerServiceProvider::PUBLIC_PREFIX; ?>
+<?php use Morningtrain\TranslationManager\ManagerServiceProvider; $public_prefix = ManagerServiceProvider::PUBLIC_PREFIX; ?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

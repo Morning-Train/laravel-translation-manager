@@ -1,8 +1,8 @@
-<?php namespace Vsch\Tests;
+<?php namespace Morningtrain\Tests;
 
-use Vsch\TranslationManager\Classes\PathTemplateResolver;
+use Morningtrain\TranslationManager\Classes\PathTemplateResolver;
 
-class PathTemplateResolverTest extends \Vsch\Tests\TranslationManagerTestCase
+class PathTemplateResolverTest extends \Morningtrain\Tests\TranslationManagerTestCase
 {
     protected $pathResolver;
 

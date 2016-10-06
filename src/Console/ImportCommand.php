@@ -1,6 +1,6 @@
-<?php namespace Vsch\TranslationManager\Console;
+<?php namespace Morningtrain\TranslationManager\Console;
 
-use Vsch\TranslationManager\Manager;
+use Morningtrain\TranslationManager\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -20,7 +20,7 @@ class ImportCommand extends Command {
      */
     protected $description = 'Import translations from the PHP sources';
 
-    /** @var  \Vsch\TranslationManager\Manager  */
+    /** @var  \Morningtrain\TranslationManager\Manager  */
     protected $manager;
 
     public function __construct(Manager $manager)

@@ -6,7 +6,7 @@
  * Time: 6:33 PM
  */
 
-namespace Vsch\TranslationManager\Classes;
+namespace Morningtrain\TranslationManager\Classes;
 
 /**
  * Class TranslationFileRewriter

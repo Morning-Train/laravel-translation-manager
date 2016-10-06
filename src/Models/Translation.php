@@ -1,10 +1,10 @@
 <?php 
 
-namespace Vsch\TranslationManager\Models;
+namespace Morningtrain\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Vsch\TranslationManager\Manager;
+use Morningtrain\TranslationManager\Manager;
 
 /**
  * Translation model

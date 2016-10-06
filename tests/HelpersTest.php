@@ -1,8 +1,8 @@
-<?php namespace Vsch\Tests;
+<?php namespace Morningtrain\Tests;
 
 use Exception;
 
-class HelpersTest extends \Vsch\Tests\TranslationManagerTestCase
+class HelpersTest extends \Morningtrain\Tests\TranslationManagerTestCase
 {
 
     /**

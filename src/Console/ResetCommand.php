@@ -1,7 +1,7 @@
-<?php namespace Vsch\TranslationManager\Console;
+<?php namespace Morningtrain\TranslationManager\Console;
 
 use Illuminate\Console\Command;
-use Vsch\TranslationManager\Manager;
+use Morningtrain\TranslationManager\Manager;
 
 class ResetCommand extends Command {
 
@@ -19,7 +19,7 @@ class ResetCommand extends Command {
      */
     protected $description = 'Delete all translations from the database';
 
-    /** @var \Vsch\TranslationManager\Manager  */
+    /** @var \Morningtrain\TranslationManager\Manager  */
     protected $manager;
 
     public function __construct(Manager $manager)

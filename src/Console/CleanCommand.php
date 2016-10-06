@@ -1,6 +1,6 @@
-<?php namespace Vsch\TranslationManager\Console;
+<?php namespace Morningtrain\TranslationManager\Console;
 
-use Vsch\TranslationManager\Manager;
+use Morningtrain\TranslationManager\Manager;
 use Illuminate\Console\Command;
 
 class CleanCommand extends Command {
@@ -19,7 +19,7 @@ class CleanCommand extends Command {
      */
     protected $description = 'Clean empty translations';
 
-    /** @var \Vsch\TranslationManager\Manager  */
+    /** @var \Morningtrain\TranslationManager\Manager  */
     protected $manager;
 
     public function __construct(Manager $manager)

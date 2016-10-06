@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsch\TranslationManager;
+namespace Morningtrain\TranslationManager;
 
 use Carbon\Carbon;
 use Exception;
@@ -12,10 +12,10 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\Finder\Finder;
-use Vsch\TranslationManager\Classes\PathTemplateResolver;
-use Vsch\TranslationManager\Classes\TranslationFileRewriter;
-use Vsch\TranslationManager\Models\Translation;
-use Vsch\TranslationManager\Models\UserLocales;
+use Morningtrain\TranslationManager\Classes\PathTemplateResolver;
+use Morningtrain\TranslationManager\Classes\TranslationFileRewriter;
+use Morningtrain\TranslationManager\Models\Translation;
+use Morningtrain\TranslationManager\Models\UserLocales;
 use ZipArchive;
 
 /**
@@ -122,7 +122,7 @@ class Manager
     }
 
     /**
-     * @return \Vsch\TranslationManager\Models\Translation
+     * @return \Morningtrain\TranslationManager\Models\Translation
      */
     public
     function getTranslation()
@@ -614,7 +614,7 @@ SQL
      * @param bool $useLottery
      * @param bool $findOrNew
      *
-     * @return \Vsch\TranslationManager\Models\Translation|null
+     * @return \Morningtrain\TranslationManager\Models\Translation|null
      */
     public
     function missingKey($namespace, $group, $key, $locale = null, $useLottery = false, $findOrNew = false)

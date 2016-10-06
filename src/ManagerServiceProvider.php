@@ -1,4 +1,4 @@
-<?php namespace Vsch\TranslationManager;
+<?php namespace Morningtrain\TranslationManager;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -38,8 +38,8 @@ class ManagerServiceProvider extends ServiceProvider
         $this->publishes([$configPath => config_path(self::PACKAGE . '.php')], 'config');
 
         $this->app[self::PACKAGE] = $this->app->share(function ($app) {
-            /* @var $manager \Vsch\TranslationManager\Manager */
-            $manager = $app->make('Vsch\TranslationManager\Manager');
+            /* @var $manager \Morningtrain\TranslationManager\Manager */
+            $manager = $app->make('Morningtrain\TranslationManager\Manager');
             return $manager;
         });
 

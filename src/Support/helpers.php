@@ -5,7 +5,7 @@
  * Date: 15-07-20
  * Time: 4:50 PM
  */
-use Vsch\TranslationManager\Translator;
+use Morningtrain\TranslationManager\Translator;
 
 if (!function_exists('mapTrans')) {
     /**

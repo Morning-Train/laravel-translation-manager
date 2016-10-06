@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsch\TranslationManager\Models;
+namespace Morningtrain\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

@@ -1,4 +1,4 @@
-<?php namespace Vsch\Tests;
+<?php namespace Morningtrain\Tests;
 
 use PHPUnit_Framework_TestCase as TestCase;
 

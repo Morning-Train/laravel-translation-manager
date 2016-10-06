@@ -1,14 +1,14 @@
-<?php namespace Vsch\TranslationManager;
+<?php namespace Morningtrain\TranslationManager;
 
 use Illuminate\Routing\Controller as BaseController;
-use Vsch\TranslationManager\Models\Translation;
-use Vsch\TranslationManager\Models\UserLocales;
+use Morningtrain\TranslationManager\Models\Translation;
+use Morningtrain\TranslationManager\Models\UserLocales;
 
 include_once(__DIR__ . '/Support/finediff.php');
 
 class Controller extends BaseController
 {
-    /** @var \Vsch\TranslationManager\Manager */
+    /** @var \Morningtrain\TranslationManager\Manager */
     protected $manager;
     protected $packagePrefix;
     protected $package;
@@ -113,7 +113,7 @@ class Controller extends BaseController
     public
     function __construct()
     {
-        $this->package = \Vsch\TranslationManager\ManagerServiceProvider::PACKAGE;
+        $this->package = \Morningtrain\TranslationManager\ManagerServiceProvider::PACKAGE;
         $this->packagePrefix = $this->package . '::';
         $this->manager = \App::make($this->package);
 

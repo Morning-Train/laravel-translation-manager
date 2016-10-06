@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsch\TranslationManager;
+namespace Morningtrain\TranslationManager;
 
 use Closure;
 
